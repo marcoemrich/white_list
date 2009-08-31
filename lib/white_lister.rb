@@ -10,7 +10,7 @@ class WhiteLister
                    dt dd abbr acronym a img blockquote 
                    del ins fieldset legend )
   ATTRIBUTES = %w( href src width height alt cite datetime 
-                   title class )
+                   title class style )
   PROTOCOLS  = %w( ed2k ftp http https irc mailto news 
                    gopher nntp telnet webcal xmpp callto feed )
   
