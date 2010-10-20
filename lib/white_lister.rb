@@ -32,7 +32,7 @@ class WhiteLister
     attrs   = Set.new(options[:attributes]).merge(@attributes)
     tags    = Set.new(options[:tags]      ).merge(@tags)
     block ||= @default_bad_tag_handler
-    returning [] do |new_text|
+    [].tap do |new_text|
       tokenizer = HTML::Tokenizer.new(html)
       bad       = nil
       while token = tokenizer.next
